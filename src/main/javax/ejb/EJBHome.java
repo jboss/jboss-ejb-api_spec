@@ -16,8 +16,13 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Inject 
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
+public @interface EJBHome
 {
+   String name() default "";
+   Class homeInterface() default java.lang.Object.class;
+   Class businessInterface() default java.lang.Object.class;
+   EJBBeanType beanType() default EJBBeanType.SESSION;
+   AccessMode accessMode() default AccessMode.LOCAL;
    String jndiName() default "";
 }

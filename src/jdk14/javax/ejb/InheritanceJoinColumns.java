@@ -11,12 +11,7 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public enum TransactionAttributeType
+public interface InheritanceJoinColumns
 {
-   MANDATORY,
-   REQUIRED,
-   REQUIRESNEW,
-   SUPPORTS,
-   NOTSUPPORTED,
-   NEVER
+   InheritanceJoinColumn[] value();
 }

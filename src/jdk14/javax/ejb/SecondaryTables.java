@@ -11,11 +11,7 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-//@Target(ElementType.TYPE) @Retention(RetentionPolicy.CLASS)
-public interface MessageDriven
+public interface SecondaryTables
 {
-   String name();
-   ActivationConfigProperty[] value();
+   SecondaryTable[] value();
 }
-
-

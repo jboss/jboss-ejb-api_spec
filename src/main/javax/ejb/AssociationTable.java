@@ -16,5 +16,10 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
-public @interface StatefulSession {}
+@Target({ElementType.METHOD, ElementType.FIELD}) @Retention(RetentionPolicy.RUNTIME)
+public @interface AssociationTable
+{
+   Table table();
+   JoinColumn[] joinColumns() default {};
+   JoinColumn[] inverseJoinColumns() default {};
+}

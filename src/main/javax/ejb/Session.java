@@ -17,4 +17,7 @@ import java.lang.annotation.RetentionPolicy;
  * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
-public @interface Session {}
+public @interface Session 
+{
+   String name() default "";
+}

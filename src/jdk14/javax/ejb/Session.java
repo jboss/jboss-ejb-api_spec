@@ -11,6 +11,9 @@ package javax.ejb;
  * @version $Revision$
  */
 //@Target(ElementType.TYPE) @Retention(RetentionPolicy.CLASS)
-public interface Session {}
+public interface Session 
+{
+   String name();
+}
 
 

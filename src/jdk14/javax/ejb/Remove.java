@@ -16,4 +16,5 @@ package javax.ejb;
 //@Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
 public interface Remove
 {
+   boolean retainIfException();
 }

@@ -19,5 +19,6 @@ import java.lang.annotation.RetentionPolicy;
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
 public @interface MessageDriven
 {
+   String name() default "";
    ActivationConfigProperty[] value() default {};
 }

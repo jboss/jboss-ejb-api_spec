@@ -16,8 +16,10 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Inject 
+@Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
+public @interface Inheritance
 {
-   String jndiName() default "";
+   InheritanceType strategy() default InheritanceType.SINGLE_TABLE;
+   DiscriminatorType discriminatorType() default DiscriminatorType.STRING;
+   String discriminatorValue() default "";
 }

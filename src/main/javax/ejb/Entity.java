@@ -19,5 +19,7 @@ import java.lang.annotation.RetentionPolicy;
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
 public @interface Entity
 {
+   String name() default "";
    EntityType entityType() default EntityType.CMP;
+   int version() default 3;
 }

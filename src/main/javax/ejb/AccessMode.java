@@ -14,6 +14,5 @@ package javax.ejb;
 public enum AccessMode
 {
    LOCAL,
-   REMOTE,
-   WEBSERVICE
+   REMOTE
 }

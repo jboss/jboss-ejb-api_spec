@@ -11,11 +11,15 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-//@Target(ElementType.TYPE) @Retention(RetentionPolicy.CLASS)
-public interface MessageDriven
+public interface JoinColumn
 {
    String name();
-   ActivationConfigProperty[] value();
+   String referencedColumnName();
+   boolean primaryKey();
+   boolean unique();
+   boolean nullable();
+   boolean insertable();
+   boolean updatable();
+   String columnDefinition();
+   String secondaryTable();
 }
-
-

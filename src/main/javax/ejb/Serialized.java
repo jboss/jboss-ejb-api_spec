@@ -16,8 +16,8 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Transaction
+@Target({ElementType.METHOD, ElementType.FIELD}) @Retention(RetentionPolicy.RUNTIME)
+public @interface Serialized
 {
-   TransactionAttributeType value() default TransactionAttributeType.REQUIRED;
+   FetchType fetch() default FetchType.EAGER;
 }

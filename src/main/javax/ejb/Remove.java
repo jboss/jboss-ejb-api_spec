@@ -18,7 +18,8 @@ import java.lang.annotation.RetentionPolicy;
  * @version $Revision$
  *
  **/
-@Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD}) @Retention(RetentionPolicy.RUNTIME)
 public @interface Remove
 {
+   boolean retainIfException() default false;
 }

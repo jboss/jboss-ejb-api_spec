@@ -12,10 +12,9 @@ package javax.ejb;
  * @version $Revision$
  */
 //@Target(ElementType.TYPE) @Retention(RetentionPolicy.CLASS)
-public interface MessageDriven
+public interface Stateful
 {
    String name();
-   ActivationConfigProperty[] value();
 }
 
 

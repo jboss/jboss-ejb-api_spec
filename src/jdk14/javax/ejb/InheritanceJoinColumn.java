@@ -5,18 +5,15 @@
  * See terms of license at gnu.org.
  */
 package javax.ejb;
+
 /**
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-//@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
-public interface ResourceRef
+public interface InheritanceJoinColumn
 {
    String name();
-   String resourceType();
-   AuthorizationType authorizationType();
-   boolean shareable();
+   boolean primaryKey();
+   String columnDefinition();
 }
-
-

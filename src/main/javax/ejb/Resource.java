@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * Jboss, the OpenSource EJB server
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -16,8 +16,12 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Inject 
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
+public @interface Resource
 {
+   String name() default "";
+   String resourceType() default "";
+   AuthorizationType authorizationType() default AuthorizationType.CONTAINER;
+   boolean shareable() default true;
    String jndiName() default "";
 }

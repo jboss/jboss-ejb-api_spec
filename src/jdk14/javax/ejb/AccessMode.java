@@ -15,8 +15,7 @@ public class AccessMode extends org.jboss.lang.Enum
 {
    public static final AccessMode LOCAL = new AccessMode("LOCAL", 0);
    public static final AccessMode REMOTE = new AccessMode("REMOTE", 1);
-   public static final AccessMode WEBSERVICE = new AccessMode("WEBSERVICE", 2);
-   private static final AccessMode[] values = {LOCAL, REMOTE, WEBSERVICE};
+   private static final AccessMode[] values = {LOCAL, REMOTE};
 
    private AccessMode(String name, int ordinal)
    {
