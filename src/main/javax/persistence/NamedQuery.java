@@ -11,14 +11,16 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import javax.ejb.AccessMode;
+
 /**
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
 @Target({ElementType.METHOD, ElementType.TYPE, ElementType.PACKAGE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface NamedQuery
-{
-   String name() default "";
-
-   String ejbql();
+public @interface NamedQuery {
+	String name() default "";
+	String queryString();
+	String resultType() default "";
+	AccessMode ejbInterfaceType() default AccessMode.LOCAL;
 }
