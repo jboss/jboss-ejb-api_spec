@@ -1,6 +1,5 @@
 package javax.persistence;
 
-import javax.ejb.LobType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 

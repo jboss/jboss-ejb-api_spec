@@ -1,4 +1,4 @@
-package javax.ejb;
+package javax.persistence;
 
 /**
  * Comment
