@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * Jboss, the OpenSource EJB server
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
