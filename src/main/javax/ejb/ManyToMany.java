@@ -22,7 +22,5 @@ public @interface ManyToMany
 
    FetchType fetch() default LAZY;
 
-   boolean isInverse() default false;
-
    String mappedBy() default "";
 }
