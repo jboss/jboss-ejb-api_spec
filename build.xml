@@ -117,9 +117,6 @@
       <path refid="dependentmodule.classpath"/>
     </path>
 
-    <!-- This module is based on Java 1.2 -->
-    <property name="javac.target" value="1.2"/>
-
     <!-- classpath and local.classpath must have a value using with a path -->
     <property name="classpath" value=""/>
     <property name="local.classpath" value=""/>
