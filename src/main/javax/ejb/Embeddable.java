@@ -13,8 +13,9 @@ import static javax.ejb.AccessType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({TYPE}) @Retention(RUNTIME)
-public @interface DependentObject
+@Target({TYPE})
+@Retention(RUNTIME)
+public @interface Embeddable
 {
    AccessType access() default PROPERTY;
 }

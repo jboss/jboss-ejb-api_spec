@@ -12,7 +12,8 @@ import static javax.ejb.FetchType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
+@Target({METHOD, FIELD})
+@Retention(RUNTIME)
 public @interface ManyToOne
 {
    String targetEntity() default "";
@@ -22,4 +23,5 @@ public @interface ManyToOne
    FetchType fetch() default EAGER;
 
    boolean optional() default true;
+
 }

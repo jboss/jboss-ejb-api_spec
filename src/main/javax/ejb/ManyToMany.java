@@ -12,7 +12,8 @@ import static javax.ejb.FetchType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
+@Target({METHOD, FIELD})
+@Retention(RUNTIME)
 public @interface ManyToMany
 {
    String targetEntity() default "";
@@ -22,4 +23,6 @@ public @interface ManyToMany
    FetchType fetch() default LAZY;
 
    boolean isInverse() default false;
+
+   String mappedBy() default "";
 }

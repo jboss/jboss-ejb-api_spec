@@ -12,7 +12,8 @@ import static javax.ejb.FetchType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
+@Target({METHOD, FIELD})
+@Retention(RUNTIME)
 public @interface OneToMany
 {
    String targetEntity() default "";
@@ -20,4 +21,6 @@ public @interface OneToMany
    CascadeType[] cascade() default {};
 
    FetchType fetch() default LAZY;
+
+   String mappedBy() default "";
 }

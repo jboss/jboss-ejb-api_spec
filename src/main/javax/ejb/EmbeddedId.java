@@ -11,8 +11,9 @@ import static java.lang.annotation.RetentionPolicy.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
-public @interface Dependent
+@Target({METHOD, FIELD})
+@Retention(RUNTIME)
+public @interface EmbeddedId
 {
-   DependentAttribute[] value() default {};
+   AttributeOverride[] value() default {};
 }

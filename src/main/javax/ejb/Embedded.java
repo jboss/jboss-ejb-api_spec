@@ -7,24 +7,13 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.FetchType.*;
 
 /**
  * @author Emmanuel Bernard
  */
 @Target({METHOD, FIELD})
 @Retention(RUNTIME)
-public @interface OneToOne
+public @interface Embedded
 {
-   String targetEntity() default "";
-
-   CascadeType[] cascade() default {};
-
-   FetchType fetch() default EAGER;
-
-   boolean optional() default true;
-
-   String mappedBy() default "";
-
-   boolean usePKasFK() default false;
+   AttributeOverride[] value() default {};
 }

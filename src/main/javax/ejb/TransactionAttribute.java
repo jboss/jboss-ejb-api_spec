@@ -15,8 +15,9 @@ import java.lang.annotation.Target;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Tx
+@Target({ElementType.METHOD, ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface TransactionAttribute
 {
-   TxType value() default TxType.REQUIRED;
+   TransactionAttributeType value() default TransactionAttributeType.REQUIRED;
 }

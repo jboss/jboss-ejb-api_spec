@@ -10,7 +10,7 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public enum TxType
+public enum TransactionAttributeType
 {
    MANDATORY,
    REQUIRED,

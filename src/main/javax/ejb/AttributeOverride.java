@@ -10,8 +10,9 @@ import static java.lang.annotation.RetentionPolicy.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({}) @Retention(RUNTIME)
-public @interface DependentAttribute
+@Target({})
+@Retention(RUNTIME)
+public @interface AttributeOverride
 {
    String name();
 
