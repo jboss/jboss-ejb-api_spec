@@ -16,26 +16,15 @@ import java.lang.annotation.RetentionPolicy;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public class TransactionManagementType implements java.io.Serializable
+public class TransactionManagementType extends org.jboss.lang.Enum
 {
    public static final TransactionManagementType CONTAINER = new TransactionManagementType("CONTAINER", 0);
    public static final TransactionManagementType BEAN = new TransactionManagementType("BEAN", 1);
-
-
-   private final transient String name;
-   private final int ordinal;
-
    private static final TransactionManagementType[] values = {CONTAINER, BEAN};
 
    private TransactionManagementType(String name, int ordinal)
    {
-      this.name = name;
-      this.ordinal = ordinal;
-   }
-
-   public String toString()
-   {
-      return name;
+      super(name, ordinal);
    }
 
    Object readResolve() throws java.io.ObjectStreamException

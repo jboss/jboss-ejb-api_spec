@@ -11,25 +11,15 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public class EntityType
+public class EntityType extends org.jboss.lang.Enum
 {
    public static final EntityType CMP = new EntityType("CMP", 0);
    public static final EntityType BMP = new EntityType("BMP", 1);
-
-   private final transient String name;
-   private final int ordinal;
-
    private static final EntityType[] values = {CMP, BMP};
 
    private EntityType(String name, int ordinal)
    {
-      this.name = name;
-      this.ordinal = ordinal;
-   }
-
-   public String toString()
-   {
-      return name;
+      super(name, ordinal);
    }
 
    Object readResolve() throws java.io.ObjectStreamException

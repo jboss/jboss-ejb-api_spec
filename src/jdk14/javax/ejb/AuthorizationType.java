@@ -11,25 +11,16 @@ package javax.ejb;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public class AuthorizationType implements java.io.Serializable
+public class AuthorizationType extends org.jboss.lang.Enum
 {
    public static final AuthorizationType CONTAINER = new AuthorizationType("CONTAINER", 0);
    public static final AuthorizationType APPLICATION = new AuthorizationType("APPLICATION", 1);
-
-   private final transient String name;
-   private final int ordinal;
 
    private static final AuthorizationType[] values = {CONTAINER, APPLICATION};
 
    private AuthorizationType(String name, int ordinal)
    {
-      this.name = name;
-      this.ordinal = ordinal;
-   }
-
-   public String toString()
-   {
-      return name;
+      super(name, ordinal);
    }
 
    Object readResolve() throws java.io.ObjectStreamException

@@ -85,7 +85,9 @@
 
     <!-- The combined dependent module classpath -->
     <path id="dependentmodule.classpath">
-      <path refid="jboss.common.classpath"/>
+       <path refid="jboss.common.classpath"/>
+       <!-- this is for org.jboss.lang.Enum -->
+       <path refid="jboss.aop.classpath"/>
     </path>
 
     <!-- ===== -->
@@ -234,15 +236,13 @@
     <mkdir dir="${build.lib}"/>
     
     <!-- jboss-ejb3x.jar -->
-    <jar jarfile="${build.lib}/jboss-ejb3x.jar"
-         manifest="${build.etc}/default.mf">
+    <jar jarfile="${build.lib}/jboss-ejb3x.jar">
       <fileset dir="${build.classes}">
         <include name="javax/**"/>
       </fileset>
     </jar>
 
-    <jar jarfile="${build.lib}/jboss-ejb3x-jdk14.jar"
-         manifest="${build.etc}/default.mf">
+    <jar jarfile="${build.lib}/jboss-ejb3x-jdk14.jar">
       <fileset dir="${build.classes14}">
         <include name="javax/**"/>
       </fileset>
