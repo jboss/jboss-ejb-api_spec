@@ -7,19 +7,18 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.FetchType.*;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
-public @interface OneToOne
+@Target({PACKAGE, TYPE}) @Retention(RUNTIME)
+public @interface GeneratorTable
 {
-   String targetEntity() default "";
+   String name() default "";
 
-   CascadeType[] cascade() default {};
+   Table table() default @Table(specified = false);
 
-   FetchType fetch() default EAGER;
+   String pkColumnName() default "";
 
-   boolean optional() default true;
+   String valueColumnName() default "";
 }

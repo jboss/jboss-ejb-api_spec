@@ -1,28 +1,25 @@
-/*
- * JBoss, the OpenSource EJB server
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
+//$Id$
+//EJB Specification Copyright 2004 Sun Microsystems, Inc.
 package javax.ejb;
 
-import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import static java.lang.annotation.ElementType.*;
+import static java.lang.annotation.RetentionPolicy.*;
+import static javax.ejb.FetchType.*;
+
 /**
- * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision$
+ * @author Emmanuel Bernard
  */
-@Target({ElementType.METHOD, ElementType.FIELD}) @Retention(RetentionPolicy.RUNTIME)
+@Target({METHOD, FIELD}) @Retention(RUNTIME)
 public @interface ManyToOne
 {
    String targetEntity() default "";
 
    CascadeType[] cascade() default {};
 
-   FetchType fetch() default FetchType.EAGER;
+   FetchType fetch() default EAGER;
 
    boolean optional() default true;
 }

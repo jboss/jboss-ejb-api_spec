@@ -20,5 +20,7 @@ public @interface MessageDriven
 {
    String name() default "";
 
+   TransactionManagementType transactionManagement() default TransactionManagementType.CONTAINER;
+
    ActivationConfigProperty[] value() default {};
 }

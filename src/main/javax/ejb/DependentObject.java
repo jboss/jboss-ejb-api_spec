@@ -7,19 +7,14 @@ import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.FetchType.*;
+import static javax.ejb.AccessType.*;
+
 
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD}) @Retention(RUNTIME)
-public @interface OneToOne
+@Target({TYPE}) @Retention(RUNTIME)
+public @interface DependentObject
 {
-   String targetEntity() default "";
-
-   CascadeType[] cascade() default {};
-
-   FetchType fetch() default EAGER;
-
-   boolean optional() default true;
+   AccessType access() default PROPERTY;
 }

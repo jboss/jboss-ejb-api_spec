@@ -5,8 +5,8 @@ package javax.ejb;
 /**
  * @author Emmanuel Bernard
  */
-public enum EntityType
+public enum AccessType
 {
-   CMP,
-   BMP
+   PROPERTY,
+   FIELD
 }
