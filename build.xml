@@ -165,22 +165,6 @@
 
   <!-- Compile all class files -->
   <target name="compile-classes" depends="init">
-    <mkdir dir="${build.classes}"/>
-    <javac destdir="${build.classes}"
-           optimize="${javac.optimize}"
-           source="1.5"
-           debug="${javac.debug}"
-	   depend="${javac.depend}"
-	   verbose="${javac.verbose}"
-	   deprecation="${javac.deprecation}"
-	   includeAntRuntime="${javac.include.ant.runtime}"
-	   includeJavaRuntime="${javac.include.java.runtime}"
-	   failonerror="${javac.fail.onerror}">
-       <src path="${source.java}"/>
-       <classpath refid="javac.classpath"/>
-       <include name="${javac.includes}"/>
-       <exclude name="${javac.excludes}"/>
-    </javac>
     <mkdir dir="${build.classes14}"/>
     <javac destdir="${build.classes14}"
            optimize="${javac.optimize}"
@@ -194,6 +178,25 @@
 	   includeJavaRuntime="${javac.include.java.runtime}"
 	   failonerror="${javac.fail.onerror}">
        <src path="${source.java14}"/>
+       <classpath refid="javac.classpath"/>
+       <include name="${javac.includes}"/>
+       <exclude name="${javac.excludes}"/>
+    </javac>
+  </target>
+
+  <target name="compile-jdk15-classes" depends="init">
+    <mkdir dir="${build.classes}"/>
+    <javac destdir="${build.classes}"
+           optimize="${javac.optimize}"
+           source="1.5"
+           debug="${javac.debug}"
+	   depend="${javac.depend}"
+	   verbose="${javac.verbose}"
+	   deprecation="${javac.deprecation}"
+	   includeAntRuntime="${javac.include.ant.runtime}"
+	   includeJavaRuntime="${javac.include.java.runtime}"
+	   failonerror="${javac.fail.onerror}">
+       <src path="${source.java}"/>
        <classpath refid="javac.classpath"/>
        <include name="${javac.includes}"/>
        <exclude name="${javac.excludes}"/>
@@ -235,15 +238,23 @@
 
     <mkdir dir="${build.lib}"/>
     
-    <!-- jboss-ejb3x.jar -->
-    <jar jarfile="${build.lib}/jboss-ejb3x.jar">
-      <fileset dir="${build.classes}">
+    <jar jarfile="${build.lib}/jboss-ejb3x-jdk14.jar">
+      <fileset dir="${build.classes14}">
         <include name="javax/**"/>
       </fileset>
     </jar>
 
-    <jar jarfile="${build.lib}/jboss-ejb3x-jdk14.jar">
-      <fileset dir="${build.classes14}">
+  </target>
+
+  <target name="jdk15-jars" 
+	  description="Builds all jar files."
+     depends="compile-jdk15-classes">
+
+    <mkdir dir="${build.lib}"/>
+    
+    <!-- jboss-ejb3x.jar -->
+    <jar jarfile="${build.lib}/jboss-ejb3x.jar">
+      <fileset dir="${build.classes}">
         <include name="javax/**"/>
       </fileset>
     </jar>

@@ -6,6 +6,11 @@
  */
 package javax.ejb;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.RetentionPolicy;
+
 /**
  * Annotation to mark a method that will remove a stateful session on completion
  *
