@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
-public @interface Session
+public @interface Stateless
 {
    String name() default "";
 }
