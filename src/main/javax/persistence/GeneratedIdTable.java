@@ -1,27 +1,25 @@
 //$Id$
 //EJB Specification Copyright 2004 Sun Microsystems, Inc.
-package javax.ejb;
+package javax.persistence;
 
-import javax.persistence.AccessType;
+import javax.persistence.Table;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.EntityType.*;
-import static javax.persistence.AccessType.*;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target(TYPE) @Retention(RUNTIME)
-public @interface Entity
+@Target({PACKAGE, TYPE}) @Retention(RUNTIME)
+public @interface GeneratedIdTable
 {
    String name() default "";
 
-   EntityType entityType() default CMP;
+   Table table() default @Table(specified = false);
 
-   AccessType access() default PROPERTY;
+   String pkColumnName() default "";
 
-   int version() default 3;
+   String valueColumnName() default "";
 }

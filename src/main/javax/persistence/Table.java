@@ -1,27 +1,26 @@
 //$Id$
 //EJB Specification Copyright 2004 Sun Microsystems, Inc.
-package javax.ejb;
+package javax.persistence;
 
-import javax.persistence.AccessType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.EntityType.*;
-import static javax.persistence.AccessType.*;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target(TYPE) @Retention(RUNTIME)
-public @interface Entity
+@Target({TYPE}) @Retention(RUNTIME)
+public @interface Table
 {
    String name() default "";
 
-   EntityType entityType() default CMP;
+   String catalog() default "";
 
-   AccessType access() default PROPERTY;
+   String schema() default "";
 
-   int version() default 3;
+   UniqueConstraint[] uniqueConstraints() default {};
+
+   boolean specified() default true; // For internal use only
 }

@@ -1,27 +1,24 @@
 //$Id$
 //EJB Specification Copyright 2004 Sun Microsystems, Inc.
-package javax.ejb;
+package javax.persistence;
 
-import javax.persistence.AccessType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
 import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
-import static javax.ejb.EntityType.*;
-import static javax.persistence.AccessType.*;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target(TYPE) @Retention(RUNTIME)
-public @interface Entity
+@Target({TYPE}) @Retention(RUNTIME)
+public @interface DiscriminatorColumn
 {
    String name() default "";
 
-   EntityType entityType() default CMP;
+   boolean nullable() default false;
 
-   AccessType access() default PROPERTY;
+   String columnDefinition() default "";
 
-   int version() default 3;
+   int length() default 10;
 }
