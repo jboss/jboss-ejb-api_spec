@@ -5,6 +5,7 @@ package javax.ejb;
  * persistence context.
  */
 public interface EntityManager {
+
 	/**
 	 * Create an instance of Query, for executing an
 	 * EJBQL query.

@@ -10,6 +10,11 @@ import java.util.List;
  */
 public interface Query {
 
+	public enum TemporalType {
+		date, //java.sql.Date
+		time, //java.sql.Time
+		timestamp //java.sql.Timestamp
+	}
 	/**
 	 * Execute the query and return the query results
 	 * as an Iterator.
