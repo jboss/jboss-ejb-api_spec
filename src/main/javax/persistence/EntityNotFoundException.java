@@ -10,14 +10,14 @@ package javax.persistence;
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
-public class ObjectNotFoundException extends RuntimeException
+public class EntityNotFoundException extends RuntimeException
 {
-   public ObjectNotFoundException()
+   public EntityNotFoundException()
    {
       super();
    }
 
-   public ObjectNotFoundException(String s)
+   public EntityNotFoundException(String s)
    {
       super(s);
    }

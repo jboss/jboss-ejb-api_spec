@@ -51,7 +51,7 @@ public interface EntityManager {
    * @param entityName
    * @param primaryKey
    * @return the found entity instance
-   * @throws ObjectNotFoundException if the entity does not exist
+   * @throws EntityNotFoundException if the entity does not exist
    * @throws IllegalArgumentException if the first argument does
    * not denote an entity type or the second
    * argument is not a valid type for that
@@ -64,7 +64,7 @@ public interface EntityManager {
    * @param entityClass
    * @param primaryKey
    * @return the found entity instance
-   * @throws ObjectNotFoundException if the entity does not exist
+   * @throws EntityNotFoundException if the entity does not exist
    * @throws IllegalArgumentException if the first argument does
    * not denote an entity type or the second
    * argument is not a valid type for that
