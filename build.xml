@@ -96,13 +96,11 @@
 
     <!-- Where source files live -->
     <property name="source.java" value="${module.source}/main"/>
-    <property name="source.java14" value="${module.source}/jdk14"/>
     <property name="source.etc" value="${module.source}/etc"/>
 
     <!-- Where build generated files will go -->
     <property name="build.reports" value="${module.output}/reports"/>
     <property name="build.classes" value="${module.output}/classes"/>
-    <property name="build.classes14" value="${module.output}/classes14"/>
     <property name="build.lib" value="${module.output}/lib"/>
     <property name="build.api" value="${module.output}/api"/>
     <property name="build.etc" value="${module.output}/etc"/>
@@ -165,26 +163,6 @@
 
   <!-- Compile all class files -->
   <target name="compile-classes" depends="init">
-    <mkdir dir="${build.classes14}"/>
-    <javac destdir="${build.classes14}"
-           optimize="${javac.optimize}"
-           source="1.4"
-           target="1.4"
-           debug="${javac.debug}"
-	   depend="${javac.depend}"
-	   verbose="${javac.verbose}"
-	   deprecation="${javac.deprecation}"
-	   includeAntRuntime="${javac.include.ant.runtime}"
-	   includeJavaRuntime="${javac.include.java.runtime}"
-	   failonerror="${javac.fail.onerror}">
-       <src path="${source.java14}"/>
-       <classpath refid="javac.classpath"/>
-       <include name="${javac.includes}"/>
-       <exclude name="${javac.excludes}"/>
-    </javac>
-  </target>
-
-  <target name="compile-jdk15-classes" depends="init">
     <mkdir dir="${build.classes}"/>
     <javac destdir="${build.classes}"
            optimize="${javac.optimize}"
@@ -238,21 +216,6 @@
 
     <mkdir dir="${build.lib}"/>
     
-    <jar jarfile="${build.lib}/jboss-ejb3x-jdk14.jar">
-      <fileset dir="${build.classes14}">
-        <include name="javax/**"/>
-      </fileset>
-    </jar>
-
-  </target>
-
-  <target name="jdk15-jars" 
-	  description="Builds all jar files."
-     depends="compile-jdk15-classes">
-
-    <mkdir dir="${build.lib}"/>
-    
-    <!-- jboss-ejb3x.jar -->
     <jar jarfile="${build.lib}/jboss-ejb3x.jar">
       <fileset dir="${build.classes}">
         <include name="javax/**"/>
