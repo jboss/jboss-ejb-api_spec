@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.FIELD}) @Retention(RetentionPolicy.RUNTIME)
 public @interface Id
 {
-   GeneratorType generate() default GeneratorType.ASSIGNED;
+   GeneratorType generate() default GeneratorType.NONE;
 
    String generator() default "";
 }

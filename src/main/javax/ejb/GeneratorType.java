@@ -12,9 +12,5 @@ package javax.ejb;
  */
 public enum GeneratorType
 {
-   ASSIGNED,
-   TABLE,
-   SEQUENCE,
-   IDENTITY,
-   AUTO
+   TABLE, SEQUENCE, IDENTITY, AUTO, NONE
 }
