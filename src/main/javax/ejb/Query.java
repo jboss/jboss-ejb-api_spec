@@ -20,9 +20,9 @@ import java.util.List;
 public interface Query {
 
    public enum TemporalType {
-      date, //java.sql.Date
-      time, //java.sql.Time
-      timestamp //java.sql.Timestamp
+      DATE, //java.sql.Date
+      TIME, //java.sql.Time
+      TIMESTAMP //java.sql.Timestamp
    }
    /**
     * Execute the query and return the query results
@@ -41,6 +41,12 @@ public interface Query {
     * @return
     */
    public Object getUniqueResult();
+
+   /**
+	* Execute a bulk update or delete.
+	* @return
+	*/
+   public int executeUpdate();
 
    /**
     * Set the maximum number of results to retrieve.
