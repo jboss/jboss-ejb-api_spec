@@ -14,7 +14,7 @@ package javax.ejb;
  */
 public @interface ActivationConfigProperty
 {
-   String name();
+   String propertyName();
 
-   String value();
+   String propertyValue();
 }
