@@ -22,5 +22,5 @@ public @interface MessageDriven
 
    TransactionManagementType transactionManagement() default TransactionManagementType.CONTAINER;
 
-   ActivationConfigProperty[] value() default {};
+   ActivationConfigProperty[] activateConfig() default {};
 }
