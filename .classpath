@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="javax/" kind="src" path="src/main"/>
+	<classpathentry kind="src" path="src/main"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/thirdparty/sun-servlet/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="/thirdparty/sun-jaf/lib/activation.jar"/>
 	<classpathentry kind="src" path="/common"/>
+	<classpathentry kind="src" path="/j2ee"/>
 	<classpathentry kind="output" path="output/eclipse-classes"/>
 </classpath>
