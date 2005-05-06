@@ -55,7 +55,7 @@ public interface EntityManager {
    * @throws IllegalArgumentException if the first argument does
    * not denote an entity type or the second
    * argument is not a valid type for that
-   * entity’s primary key
+   * entity's primary key
    */
    public Object find(String entityName, Object primaryKey);
 
@@ -68,7 +68,7 @@ public interface EntityManager {
    * @throws IllegalArgumentException if the first argument does
    * not denote an entity type or the second
    * argument is not a valid type for that
-   * entity’s primary key
+   * entity's primary key
    */
    public <T> T find(Class<T> entityClass, Object primaryKey);
 
