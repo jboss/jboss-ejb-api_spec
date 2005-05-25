@@ -1,24 +1,21 @@
+//$Id$
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
-
 import static java.lang.annotation.ElementType.METHOD;
+
 import static java.lang.annotation.ElementType.FIELD;
+
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static javax.persistence.FetchType.LAZY;
+
+import java.lang.annotation.Target;
+import java.lang.annotation.Retention;
 
 /**
- * Comment
- *
- * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision$
+ * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD})
-@Retention(RUNTIME)
-public @interface Lob
-{
-   FetchType fetch() default LAZY;
-
-   LobType type() default LobType.BLOB;
+@Target({METHOD, FIELD}) @Retention(RUNTIME)
+public @interface Lob {
+	FetchType fetch() default FetchType.LAZY;
+	LobType type() default LobType.BLOB;
 }

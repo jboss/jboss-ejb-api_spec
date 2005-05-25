@@ -1,18 +1,11 @@
-/*
- * JBoss, the OpenSource EJB server
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
+//$Id$
 package javax.persistence;
 
 /**
- * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision$
+ * @author Gavin King
  */
-public enum FlushModeType
-{
-   COMMIT,
-   AUTO,
-   NEVER
+public enum FlushModeType {
+	AUTO,
+	COMMIT,
+	NEVER
 }

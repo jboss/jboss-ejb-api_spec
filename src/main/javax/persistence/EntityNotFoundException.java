@@ -1,24 +1,25 @@
-/*
- * JBoss, the OpenSource EJB server
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
+//$Id$
 package javax.persistence;
 
 /**
- * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision$
+ * @author Gavin King
  */
-public class EntityNotFoundException extends RuntimeException
-{
-   public EntityNotFoundException()
-   {
-      super();
-   }
+public class EntityNotFoundException extends RuntimeException {
 
-   public EntityNotFoundException(String s)
-   {
-      super(s);
-   }
+	public EntityNotFoundException() {
+		super();
+	}
+
+	public EntityNotFoundException(String message, Throwable cause) {
+		super( message, cause );
+	}
+
+	public EntityNotFoundException(String message) {
+		super( message );
+	}
+
+	public EntityNotFoundException(Throwable cause) {
+		super( cause );
+	}
+
 }

@@ -1,22 +1,18 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
-
-import static java.lang.annotation.ElementType.TYPE;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-import static javax.persistence.AccessType.PROPERTY;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
+import static java.lang.annotation.ElementType.*;
+import static java.lang.annotation.RetentionPolicy.*;
+import static javax.persistence.AccessType.*;
 
 /**
  * @author Emmanuel Bernard
  */
 @Target(TYPE) @Retention(RUNTIME)
-public @interface Entity
-{
-   String name() default "";
-
-   AccessType access() default PROPERTY;
-
+public @interface Entity {
+	String name() default "";
+	AccessType access() default PROPERTY;
 }

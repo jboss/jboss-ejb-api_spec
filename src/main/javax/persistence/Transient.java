@@ -1,5 +1,5 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 import java.lang.annotation.Retention;
@@ -12,6 +12,4 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @author Emmanuel Bernard
  */
 @Target({METHOD, FIELD}) @Retention(RUNTIME)
-public @interface Transient
-{
-}
+public @interface Transient {}

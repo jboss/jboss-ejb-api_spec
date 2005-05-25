@@ -5,4 +5,7 @@ package javax.persistence;
 /**
  * @author Emmanuel Bernard
  */
-public enum DiscriminatorType { STRING, CHAR, INTEGER };
+public enum EntityType {
+    CMP,
+    BMP
+}

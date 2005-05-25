@@ -1,23 +1,25 @@
-/*
- * JBoss, the OpenSource EJB server
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
+//$Id$
 package javax.persistence;
 
 /**
- * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision$
+ * @author Gavin King
  */
-public class NonUniqueResultException extends RuntimeException
-{
-   public NonUniqueResultException()
-   {
-   }
+public class NonUniqueResultException extends RuntimeException {
 
-   public NonUniqueResultException(String message)
-   {
-      super(message);
-   }
+	public NonUniqueResultException() {
+		super();
+	}
+
+	public NonUniqueResultException(String message) {
+		super( message );
+	}
+
+	public NonUniqueResultException(String message, Throwable cause) {
+		super( message, cause );
+	}
+
+	public NonUniqueResultException(Throwable cause) {
+		super( cause );
+	}
+
 }

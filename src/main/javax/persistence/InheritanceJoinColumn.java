@@ -1,5 +1,5 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 import java.lang.annotation.Retention;
@@ -12,11 +12,8 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @author Emmanuel Bernard
  */
 @Target({TYPE}) @Retention(RUNTIME)
-public @interface InheritanceJoinColumn
-{
-   String name() default "";
-
-   String referencedColumnName() default "";
-
-   String columnDefinition() default "";
+public @interface InheritanceJoinColumn {
+	String name() default "";
+	String referencedColumnName() default "";
+	String columnDefinition() default "";
 }

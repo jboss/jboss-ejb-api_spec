@@ -1,5 +1,5 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 import java.lang.annotation.Retention;
@@ -12,16 +12,10 @@ import static javax.persistence.FetchType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD})
-@Retention(RUNTIME)
-public @interface ManyToOne
-{
-   String targetEntity() default "";
-
-   CascadeType[] cascade() default {};
-
-   FetchType fetch() default EAGER;
-
-   boolean optional() default true;
-
+@Target({METHOD, FIELD}) @Retention(RUNTIME)
+public @interface ManyToOne {
+	String targetEntity() default "";
+	CascadeType[] cascade() default {};
+	FetchType fetch() default EAGER;
+	boolean optional() default true;
 }

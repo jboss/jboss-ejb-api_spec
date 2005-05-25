@@ -13,9 +13,7 @@ import static javax.persistence.AccessType.*;
 /**
  * @author Emmanuel Bernard
  */
-@Target({TYPE})
-@Retention(RUNTIME)
-public @interface Embeddable
-{
-   AccessType access() default PROPERTY;
+@Target({TYPE}) @Retention(RUNTIME)
+public @interface Embeddable {
+	AccessType access() default PROPERTY;
 }

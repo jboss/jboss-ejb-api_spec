@@ -1,12 +1,11 @@
+//$Id$
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 /**
- * Comment
- *
- * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision$
+ * @author Emmanuel Bernard
  */
-public enum LobType
-{
-   BLOB, CLOB
+public enum LobType {
+	BLOB,
+	CLOB
 }

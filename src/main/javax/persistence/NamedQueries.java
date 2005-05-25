@@ -1,21 +1,19 @@
-/*
- * JBoss, the OpenSource EJB server
- *
- * Distributable under LGPL license.
- * See terms of license at gnu.org.
- */
+//$Id$
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.RetentionPolicy;
+
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.ElementType.TYPE;
+import static java.lang.annotation.ElementType.PACKAGE;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision$
+ * @author Emmanuel Bernard
  */
-@Target({ElementType.METHOD, ElementType.TYPE, ElementType.PACKAGE}) @Retention(RetentionPolicy.RUNTIME)
+@Target({METHOD, TYPE, PACKAGE}) @Retention(RUNTIME)
 public @interface NamedQueries {
-   NamedQuery [] value ();
+	NamedQuery [] value ();
 }

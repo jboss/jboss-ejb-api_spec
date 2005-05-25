@@ -1,20 +1,17 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
-import javax.persistence.AttributeOverride;
+import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.RetentionPolicy.*;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target({METHOD, FIELD})
-@Retention(RUNTIME)
-public @interface EmbeddedId
-{
-   AttributeOverride[] value() default {};
+@Target({ElementType.METHOD, ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface EmbeddedId {
+	AttributeOverride[] value() default {};
 }

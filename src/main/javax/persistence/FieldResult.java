@@ -4,14 +4,13 @@ package javax.persistence;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-
-import static java.lang.annotation.RetentionPolicy.*;
+import java.lang.annotation.RetentionPolicy;
 
 /**
  * @author Emmanuel Bernard
  */
-@Target({}) @Retention(RUNTIME)
-public @interface AttributeOverride {
+@Target({}) @Retention(RetentionPolicy.RUNTIME)
+public @interface FieldResult {
 	String name();
-	Column[] column() default {};
+	String column();
 }

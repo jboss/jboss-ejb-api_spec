@@ -1,5 +1,5 @@
 //$Id$
-//EJB Specification Copyright 2004 Sun Microsystems, Inc.
+//EJB3 Specification Copyright 2004, 2005 Sun Microsystems, Inc.
 package javax.persistence;
 
 import java.lang.annotation.Retention;
@@ -14,11 +14,8 @@ import static javax.persistence.DiscriminatorType.*;
  * @author Emmanuel Bernard
  */
 @Target({TYPE}) @Retention(RUNTIME)
-public @interface Inheritance
-{
-   InheritanceType strategy() default SINGLE_TABLE;
-
-   DiscriminatorType discriminatorType() default STRING;
-
-   String discriminatorValue() default "";
+public @interface Inheritance {
+	InheritanceType strategy() default SINGLE_TABLE;
+	DiscriminatorType discriminatorType() default STRING;
+	String discriminatorValue() default "";
 }
