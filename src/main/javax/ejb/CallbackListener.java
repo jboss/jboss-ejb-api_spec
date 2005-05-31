@@ -17,5 +17,5 @@ import static java.lang.annotation.RetentionPolicy.*;
  */
 @Target({TYPE}) @Retention(RUNTIME)
 public @interface CallbackListener {
-   String value(); // fully qualified name of the callback listenerclass
+   Class value(); // fully qualified name of the callback listenerclass
 }

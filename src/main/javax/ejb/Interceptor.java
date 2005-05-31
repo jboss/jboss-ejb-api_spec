@@ -17,5 +17,5 @@ import static java.lang.annotation.RetentionPolicy.*;
  */
 @Target({TYPE}) @Retention(RUNTIME)
 public @interface Interceptor {
-   String value();
+   Class value();
 }
