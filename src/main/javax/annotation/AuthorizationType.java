@@ -4,7 +4,7 @@
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
  */
-package javax.ejb;
+package javax.annotation;
 
 /**
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
