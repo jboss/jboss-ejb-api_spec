@@ -1,4 +1,4 @@
-package javax.ejb;
+package javax.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  */
 @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Resources
+public @interface EJBs
 {
-   Resource[] value();
+   EJB[] value();
 }

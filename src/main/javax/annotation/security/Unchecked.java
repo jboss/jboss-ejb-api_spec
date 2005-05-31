@@ -4,7 +4,7 @@
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
  */
-package javax.ejb;
+package javax.annotation.security;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
