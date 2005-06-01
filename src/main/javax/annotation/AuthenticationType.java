@@ -10,7 +10,7 @@ package javax.annotation;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public enum AuthorizationType
+public enum AuthenticationType
 {
    CONTAINER,
    APPLICATION

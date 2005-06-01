@@ -20,11 +20,12 @@ public @interface Resource
 {
    String name() default "";
 
-   String resourceType() default "";
+   Class type() default Object.class;
 
-   AuthorizationType authorizationType() default AuthorizationType.CONTAINER;
+   AuthenticationType authenticationType() default AuthenticationType.CONTAINER;
 
    boolean shareable() default true;
 
-   String jndiName() default "";
+   String description() default "";
+
 }
