@@ -22,5 +22,5 @@ public @interface EJB
 
    Class businessInterface() default java.lang.Object.class;
 
-   String jndiName() default "";
+   String beanName() default "";
 }
