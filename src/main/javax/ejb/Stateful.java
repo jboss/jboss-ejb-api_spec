@@ -19,7 +19,5 @@ import java.lang.annotation.Target;
 public @interface Stateful
 {
    String name() default "";
-
-   TransactionManagementType transactionManagement() default TransactionManagementType.CONTAINER;
 }
 
