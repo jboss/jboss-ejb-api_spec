@@ -16,7 +16,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  */
 @Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface Exclude
+public @interface DenyAll
 {
 }
 
