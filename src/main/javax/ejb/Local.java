@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LocalInterface
+public @interface Local
 {
-   Class[] value();
+   Class[] value() default {};
 }

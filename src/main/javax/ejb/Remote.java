@@ -19,7 +19,7 @@ import java.lang.annotation.Target;
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RemoteInterface
+public @interface Remote
 {
-   Class[] value();
+   Class[] value() default {};
 }
