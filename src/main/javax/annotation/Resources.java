@@ -1,3 +1,9 @@
+/*
+ * JBoss, Home of Professional Open Source
+ *
+ * Distributable under LGPL license.
+ * See terms of license at gnu.org.
+ */
 package javax.annotation;
 
 import java.lang.annotation.ElementType;
@@ -7,7 +13,7 @@ import java.lang.annotation.Target;
 import javax.annotation.Resource;
 
 /**
- * Comment
+ * Specify a collection of Resources on a bean class.
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$

@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * JBoss, Home of Professional Open Source
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -9,6 +9,8 @@ package javax.ejb;
 /**
  * This exception indicates that a request carried a null transaction context,
  * but the target object requires an activate transaction.
+ * 
+ * @version $Revision$
  */
 public class EJBTransactionRequiredException extends EJBException {
 

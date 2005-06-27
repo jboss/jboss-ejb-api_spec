@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * JBoss, Home of Professional Open Source
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -9,6 +9,7 @@ package javax.ejb;
 /**
  * A NoSuchObjectLocalException is thrown if an attempt is made to invoke
  * a method on an object that no longer exists.
+ * @version $Revision$
  */
 public class EJBNoSuchObjectException extends EJBException {
 

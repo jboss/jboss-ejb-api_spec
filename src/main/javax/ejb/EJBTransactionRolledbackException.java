@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * JBoss, Home of Professional Open Source
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -11,6 +11,8 @@ package javax.ejb;
  * of the request has been rolled back, or marked to roll back. Thus the
  * requested operation either could not be performed or was not performed
  * because further computation on behalf of the transaction would be fruitless.
+ * 
+ * @version $Revision$
  */
 public class EJBTransactionRolledbackException extends EJBException {
 

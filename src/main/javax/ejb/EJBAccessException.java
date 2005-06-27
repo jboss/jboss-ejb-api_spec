@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * JBoss, Home of Professional Open Source
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -9,6 +9,7 @@ package javax.ejb;
 /**
  * An AccessLocalException is thrown to indicate that the caller does not
  * have permission to call the method. This exception is thrown to local clients.
+ * @version $Revision$
  */
 public class EJBAccessException extends EJBException {
 

@@ -1,5 +1,5 @@
 /*
- * JBoss, the OpenSource EJB server
+ * JBoss, Home of Professional Open Source
  *
  * Distributable under LGPL license.
  * See terms of license at gnu.org.
@@ -12,11 +12,14 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * The DenyAll annotation specifies that no security roles are permitted to
+ * execute the specified method(s).
+ * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
 @Target({ElementType.METHOD, ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-public @interface DenyAll
+   public @interface DenyAll
 {
 }
 
