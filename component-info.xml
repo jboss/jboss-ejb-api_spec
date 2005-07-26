@@ -1,0 +1,16 @@
+<project name="ejb3x-component-info">
+   <!-- ============================================================ -->
+   <!-- ejb3x                                                        -->
+   <!-- ============================================================ -->
+
+   <component id="ejb3x"
+              module="jboss-ejb3x"
+              version="5.0-SNAPSHOT"
+   >
+      <artifact id="jboss-ejb3x.jar"/>   
+      
+      <export>
+         <include name="jboss-ejb3x.jar"/>      
+      </export>
+   </component>
+</project>
