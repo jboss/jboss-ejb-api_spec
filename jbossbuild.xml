@@ -30,7 +30,7 @@
       <!-- The main source                                              -->
       <!-- ============================================================ -->
 
-      <source id="main">
+      <source id="main" requiredJDK="1.5">
          <include component="sun-jaf"/>
          <include component="sun-servlet"/>
          <include component="common"/>
@@ -42,7 +42,7 @@
       <!-- jboss-ejb3x.jar                                                -->
       <!-- ============================================================ -->
 
-      <artifactdef artifact="jboss-ejb3x.jar">
+      <artifactdef artifact="jboss-ejb3x.jar" requiredJDK="1.5">
          <include input="main">
             <include pattern="javax/**"/>
          </include>

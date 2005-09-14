@@ -10,7 +10,7 @@
       <artifact id="jboss-ejb3x.jar"/>   
       
       <export>
-         <include name="jboss-ejb3x.jar"/>      
+         <include input="jboss-ejb3x.jar"/>      
       </export>
    </component>
 </project>
