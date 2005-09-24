@@ -35,4 +35,6 @@ import java.lang.annotation.Target;
 
    String description() default "";
 
+   String mappedName() default "";
+
 }
