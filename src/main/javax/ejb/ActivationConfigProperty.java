@@ -9,6 +9,8 @@ package javax.ejb;
 
 
 /**
+ * Annotation for adding properties to messaging bean annotations (i.e. @MessageDriven, @Consumer)
+ * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */

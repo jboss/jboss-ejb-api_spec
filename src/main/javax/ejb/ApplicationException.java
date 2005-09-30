@@ -12,7 +12,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Comment
+ * Annotation for identifying an Exception class as an Application Exception, which does not cause
+ * a transaction rollback
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
