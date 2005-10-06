@@ -30,7 +30,7 @@
       <!-- The main source                                              -->
       <!-- ============================================================ -->
 
-      <source id="main" requiredJDK="1.5">
+      <source id="main" requiredJDK="1.5" jvmSource="1.5" jvmTarget="1.5">
          <include component="sun-jaf"/>
          <include component="sun-servlet"/>
          <include component="common"/>
