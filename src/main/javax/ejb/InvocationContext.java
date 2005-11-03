@@ -40,8 +40,6 @@ public interface InvocationContext
 
    public void setParameters(Object[] params);
 
-   public EJBContext getEJBContext();
-
    public java.util.Map getContextData();
 
    public Object proceed() throws Exception;

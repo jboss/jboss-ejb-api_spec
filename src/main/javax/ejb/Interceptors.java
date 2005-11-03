@@ -34,7 +34,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
-@Target({TYPE}) @Retention(RUNTIME)
+@Target({TYPE, METHOD}) @Retention(RUNTIME)
    public @interface Interceptors
 {
    Class[] value();
