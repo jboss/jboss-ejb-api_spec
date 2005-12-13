@@ -38,5 +38,5 @@ import java.lang.annotation.Target;
 {
    String name() default "";
 
-   ActivationConfigProperty[] activateConfig() default {};
+   ActivationConfigProperty[] activationConfig() default {};
 }
