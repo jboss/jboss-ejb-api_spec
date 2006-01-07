@@ -40,4 +40,6 @@ public @interface EJB
    Class businessInterface() default java.lang.Object.class;
 
    String beanName() default "";
+   
+   String mappedName() default "";
 }
