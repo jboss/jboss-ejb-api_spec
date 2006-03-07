@@ -19,7 +19,7 @@
 * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 */
-package javax.ejb;
+package javax.annotation;
 
 import java.lang.annotation.Target;
 import java.lang.annotation.Retention;
@@ -27,14 +27,13 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
 
 /**
- * The PostConstruct method is invoked on the newly constructed instance, after
- * any dependency injection has been performed by the container and before the
- * first business method is invoked on the bean.
+ * The PreDestroy method will execute after any method annotated with the Remove
+ * annotation has completed.
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
 @Target({METHOD}) @Retention(RUNTIME)
-   public @interface PostConstruct
+   public @interface PreDestroy
 {
 }
