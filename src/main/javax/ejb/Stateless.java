@@ -40,4 +40,6 @@ import java.lang.annotation.Target;
    public @interface Stateless
 {
    String name() default "";
+   String mappedName() default "";
+   String description() default "";
 }

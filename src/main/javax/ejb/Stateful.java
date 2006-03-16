@@ -40,5 +40,7 @@ import java.lang.annotation.Target;
    public @interface Stateful
 {
    String name() default "";
+   String mappedName() default "";
+   String description() default "";
 }
 

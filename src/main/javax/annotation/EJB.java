@@ -42,4 +42,6 @@ public @interface EJB
    String beanName() default "";
    
    String mappedName() default "";
+
+   String description() default "";
 }

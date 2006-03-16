@@ -37,6 +37,8 @@ import java.lang.annotation.Target;
    public @interface MessageDriven
 {
    String name() default "";
-
+   Class messageListenerInterface() default Object.class;
    ActivationConfigProperty[] activationConfig() default {};
+   String mappedName() default "";
+   String description() default "";
 }
