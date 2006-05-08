@@ -19,7 +19,7 @@
 * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 */
-package javax.ejb;
+package javax.interceptor;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -27,12 +27,15 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
 
 /**
- * Defines an interceptor method. The method must have the signature:
- * public Object <METHOD>(InvocationContext) throws Exception
+ * An interceptor class is denoted using the Interceptor annotation on the bean
+ * class with which it is associated. In the case of multiple interceptor
+ * classes, the Interceptors annotation is used.
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
-@Target({METHOD}) @Retention(RUNTIME)
-public @interface AroundInvoke {
+@Target({TYPE, METHOD}) @Retention(RUNTIME)
+   public @interface Interceptors
+{
+   Class[] value();
 }

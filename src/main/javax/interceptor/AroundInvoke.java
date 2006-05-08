@@ -19,28 +19,20 @@
 * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 */
-package javax.ejb;
+package javax.interceptor;
 
-import java.lang.reflect.Method;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+import static java.lang.annotation.ElementType.*;
+import static java.lang.annotation.RetentionPolicy.*;
 
 /**
- * The InvocationContext object provides the metadata that is required for
- * AroundInvoke interceptor methods.
+ * Defines an interceptor method. The method must have the signature:
+ * public Object <METHOD>(InvocationContext) throws Exception
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
-public interface InvocationContext
-{
-   public Object getBean();
-
-   public Method getMethod();
-
-   public Object[] getParameters();
-
-   public void setParameters(Object[] params);
-
-   public java.util.Map getContextData();
-
-   public Object proceed() throws Exception;
+@Target({METHOD}) @Retention(RUNTIME)
+public @interface AroundInvoke {
 }
