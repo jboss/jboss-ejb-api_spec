@@ -40,6 +40,18 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
    public @interface Resource
 {
+   /**
+    * Enums for whether the container or bean is to perform authentication.
+    *
+    * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
+    * @version $Revision$
+    */
+   public enum AuthenticationType
+   {
+      CONTAINER,
+      APPLICATION
+   }
+
    String name() default "";
 
    Class type() default Object.class;

@@ -19,16 +19,29 @@
 * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
 * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 */
-package javax.annotation;
+package javax.ejb;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
- * Enums for whether the container or bean is to perform authentication.
+ * The EJB annotation denotes a reference to an EJB 3.0 session bean.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-public enum AuthenticationType
+@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
+public @interface EJB
 {
-   CONTAINER,
-   APPLICATION
+   String name() default "";
+
+   Class businessInterface() default java.lang.Object.class;
+
+   String beanName() default "";
+   
+   String mappedName() default "";
+
+   String description() default "";
 }

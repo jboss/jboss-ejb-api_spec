@@ -32,7 +32,7 @@ import java.lang.reflect.Method;
  */
 public interface InvocationContext
 {
-   public Object getBean();
+   public Object getTarget();
 
    public Method getMethod();
 
