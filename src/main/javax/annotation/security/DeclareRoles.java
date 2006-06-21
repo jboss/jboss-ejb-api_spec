@@ -37,7 +37,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  */
 @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
-   public @interface RolesReferenced
+   public @interface DeclareRoles
 {
    String[] value();
 }
