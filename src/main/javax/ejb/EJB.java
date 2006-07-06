@@ -37,11 +37,8 @@ public @interface EJB
 {
    String name() default "";
 
-   @Deprecated
-   Class businessInterface() default java.lang.Object.class;
-   
    Class beanInterface() default java.lang.Object.class;
-
+   
    String beanName() default "";
    
    String mappedName() default "";
