@@ -85,8 +85,9 @@
 
     <!-- The combined dependent module classpath -->
     <path id="dependentmodule.classpath">
-       <path refid="jboss.common.classpath"/>
-       <!-- this is for org.jboss.lang.Enum -->
+      <path refid="jboss.common.core.classpath"/>
+      <path refid="jboss.common.logging.spi.classpath"/>
+      <!-- this is for org.jboss.lang.Enum -->
        <path refid="jboss.aop.classpath"/>
        <path refid="jboss.j2ee.classpath"/>
     </path>
