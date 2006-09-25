@@ -5,7 +5,7 @@
 	<classpathentry kind="lib" path="/thirdparty/sun-servlet/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="/thirdparty/sun-jaf/lib/activation.jar"/>
 	<classpathentry kind="src" path="/j2ee"/>
-	<classpathentry kind="lib" path="/thirdparty/jboss/common-core/lib/jboss-common-core-2.0.0.jar"/>
-	<classpathentry kind="lib" path="/thirdparty/jboss/common-logging-spi/lib/jboss-logging-spi-2.0.0.jar"/>
+ <classpathentry kind="lib" path="/thirdparty/jboss/common-core/lib/jboss-common-core.jar"/>
+ <classpathentry kind="lib" path="/thirdparty/jboss/common-logging-spi/lib/jboss-logging-spi.jar"/>
 	<classpathentry kind="output" path="output/eclipse-classes"/>
 </classpath>
