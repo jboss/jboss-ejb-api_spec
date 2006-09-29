@@ -21,6 +21,7 @@
 */
 package javax.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -33,7 +34,9 @@ import javax.annotation.Resource;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Target({ElementType.TYPE}) 
+@Retention(RetentionPolicy.RUNTIME)
 public @interface Resources
 {
    Resource[] value();

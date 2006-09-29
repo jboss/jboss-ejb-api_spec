@@ -21,6 +21,7 @@
 */
 package javax.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.Target;
 import java.lang.annotation.Retention;
 import static java.lang.annotation.ElementType.*;
@@ -34,7 +35,9 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
  * @version $Revision$
  */
-@Target({METHOD}) @Retention(RUNTIME)
-   public @interface PostConstruct
+@Documented
+@Target({METHOD})
+@Retention(RUNTIME)
+public @interface PostConstruct
 {
 }
