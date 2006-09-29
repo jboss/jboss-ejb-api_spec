@@ -40,7 +40,10 @@ public interface InvocationContext
 
    public void setParameters(Object[] params);
 
-   public java.util.Map getContextData();
+   /**
+    * Returns the context data associated with this invocation or lifecycle callback. If there is no context data, an empty Map object will be returned.
+    */
+   public java.util.Map<String, Object> getContextData();
 
    public Object proceed() throws Exception;
 }
