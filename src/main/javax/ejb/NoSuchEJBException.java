@@ -22,36 +22,37 @@
 package javax.ejb;
 
 /**
- * A NoSuchObjectLocalException is thrown if an attempt is made to invoke
+ * A NoSuchEJBException is thrown if an attempt is made to invoke
  * a method on an object that no longer exists.
  * @version $Revision$
  */
-public class EJBNoSuchObjectException extends EJBException {
+public class NoSuchEJBException extends EJBException {
+   private static final long serialVersionUID = -4861625171310593950L;
 
   /**
-   * Constructs a NoSuchObjectLocalException with no detail message.
+   * Constructs a NoSuchEJBException with no detail message.
    */
-  public EJBNoSuchObjectException() {
+  public NoSuchEJBException() {
     super();
   }
 
   /**
-   * Constructs a NoSuchObjectLocalException with the specified detailed message.
+   * Constructs a NoSuchEJBException with the specified detailed message.
    *
    * @param message - The detailed message.
    */
-  public EJBNoSuchObjectException(String message) {
+  public NoSuchEJBException(String message) {
     super(message);
   }
 
   /**
-   * Constructs a NoSuchObjectLocalException with the specified detail message and a
+   * Constructs a NoSuchEJBException with the specified detail message and a
    * nested exception.
    *
    * @param message - The detailed message.
    * @param ex - The originally thrown exception.
    */
-  public EJBNoSuchObjectException(String message, Exception ex) {
+  public NoSuchEJBException(String message, Exception ex) {
     super(message,ex);
   }
 }
