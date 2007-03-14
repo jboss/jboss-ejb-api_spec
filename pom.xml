@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>jboss</groupId>
-    <artifactId>jboss-javaee</artifactId>
+    <artifactId>javaee</artifactId>
     <version>5.0.0-SNAPSHOT</version>
     <relativePath>../build/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>jboss</groupId>
-  <artifactId>jboss-ejb-api</artifactId>
+  <artifactId>ejb-api</artifactId>
   <version>3.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>JBoss EJB 3.0 API</name>
@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>jboss</groupId>
-      <artifactId>jboss-transaction-api</artifactId>
+      <artifactId>transaction-api</artifactId>
       <version>1.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
