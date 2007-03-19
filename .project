@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ejb-api</name>
+	<name>jboss-ejb-api</name>
 	<comment>The Java EJB 3.0 API classes</comment>
 	<projects>
 	</projects>
