@@ -21,9 +21,9 @@
 */
 package javax.ejb;
 
-import java.lang.annotation.ElementType;
+import static java.lang.annotation.ElementType.*;
 import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
+import static java.lang.annotation.RetentionPolicy.*;
 import java.lang.annotation.Target;
 
 /**
@@ -32,7 +32,8 @@ import java.lang.annotation.Target;
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
  */
-@Target({ElementType.METHOD, ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER}) @Retention(RetentionPolicy.RUNTIME)
+@Retention(RUNTIME)
+@Target({METHOD, TYPE, FIELD}) 
 public @interface EJB
 {
    String name() default "";

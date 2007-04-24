@@ -43,15 +43,4 @@ public class EJBAccessException extends EJBException {
   public EJBAccessException(String message) {
     super(message);
   }
-
-  /**
-   * Constructs an AccessLocalException with the specified detail message and a nested exception.
-   *
-   * @param message - The detailed message
-   * @param ex - The nested exception
-   */
-  public EJBAccessException(String message,
-                              Exception ex) {
-    super(message,ex);
-  }
 }

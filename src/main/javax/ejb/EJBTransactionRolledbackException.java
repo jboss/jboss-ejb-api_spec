@@ -57,15 +57,4 @@ public class EJBTransactionRolledbackException extends EJBException {
   public EJBTransactionRolledbackException(String message,Exception ex) {
     super(message,ex);
   }
-
-   /**
-    * Constructs a TransactionRolledbackLocalException with the specified detail
-    * message and a nested exception.
-    *
-    * @param message - The detailed message.
-    * @param ex - The originally thrown exception.
-    */
-   public EJBTransactionRolledbackException(Exception ex) {
-     super(ex);
-   }
 }
