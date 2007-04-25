@@ -33,7 +33,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  */
 @Retention(RUNTIME)
-@Target({METHOD, TYPE, FIELD}) 
+@Target({TYPE, METHOD, FIELD}) 
 public @interface EJB
 {
    String name() default "";
