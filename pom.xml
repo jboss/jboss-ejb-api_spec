@@ -16,7 +16,7 @@
   <description>The Java EJB 3.0 API classes</description>
   <dependencies>
     <dependency>
-      <groupId>jboss</groupId>
+      <groupId>org.jboss.javaee</groupId>
       <artifactId>jboss-transaction-api</artifactId>
       <version>1.0.1-SNAPSHOT</version>
     </dependency>
