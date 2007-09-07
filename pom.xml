@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.jboss.javaee</groupId>
       <artifactId>jboss-transaction-api</artifactId>
-      <version>1.0.2-SNAPSHOT</version>
+      <version>1.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>jboss.jbossws</groupId>
