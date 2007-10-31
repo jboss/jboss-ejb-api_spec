@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jboss.javaee</groupId>
   <artifactId>jboss-ejb-api</artifactId>
-  <version>${version.jboss-ejb-api}</version>
+  <version>3.0.0${build.id}</version>
   <packaging>jar</packaging>
   <name>JBoss EJB 3.0 API</name>
   <url>http://www.jboss.org</url>
