@@ -2,13 +2,13 @@
   <parent>
     <groupId>org.jboss.javaee</groupId>
     <artifactId>jboss-javaee-parent</artifactId>
-    <version>5.0.0-SNAPSHOT</version>
+    <version>5.0.0.CR1</version>
     <relativePath>../build/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jboss.javaee</groupId>
   <artifactId>jboss-ejb-api</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
+  <version>3.0.0.CR1</version>
   <packaging>jar</packaging>
   <name>JBoss EJB 3.0 API</name>
   <url>http://www.jboss.org</url>
@@ -17,7 +17,7 @@
     <dependency>
       <groupId>org.jboss.javaee</groupId>
       <artifactId>jboss-transaction-api</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1.CR1</version>
     </dependency>
     <dependency>
       <groupId>jboss.jbossws</groupId>
