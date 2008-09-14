@@ -150,11 +150,12 @@ public interface EJBContext
    public TimerService getTimerService() throws IllegalStateException;
 
    /**
-    * New from EJB 3.0.  A JNDI lookup method that doesn't throw exceptions
+    * Lookup a resource within the component's private naming context. 
     *
-    * @param name
-    * @return returns null if JNDI lookup finds nothing
+    * @param name - Name of the entry (relative to java:comp/env).
+    * @throws IllegalArgumentException - The Container throws the exception if
+    * the given name does not match an entry within the component's environment.
     */
-   public Object lookup(String name);
+   public Object lookup(String name) throws IllegalArgumentException;
    
 }
