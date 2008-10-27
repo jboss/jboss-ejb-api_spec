@@ -87,9 +87,9 @@
       <version>1.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>jboss.jbossws</groupId>
-      <artifactId>jboss-jaxrpc</artifactId>
-      <version>1.0.4.GA</version>
+      <groupId>org.jboss.ws.native</groupId>
+      <artifactId>jbossws-native-jaxrpc</artifactId>
+      <version>3.0.4.GA</version>
     </dependency>
   </dependencies>
   
