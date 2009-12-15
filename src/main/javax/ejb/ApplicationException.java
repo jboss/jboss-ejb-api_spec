@@ -37,5 +37,16 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ApplicationException
 {
+   /**
+    * Indicates whether the application exception designation should apply to subclasses of 
+    * the annotated exception class.
+    * @since 3.1
+    */
+   boolean inherited() default true;
+   
+   /**
+    * Indicates whether the container should cause the transaction to rollback when the 
+    * exception is thrown. 
+    */
    boolean rollback() default false;
 }

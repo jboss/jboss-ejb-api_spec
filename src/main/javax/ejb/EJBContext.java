@@ -21,10 +21,12 @@
 */
 package javax.ejb;
 
-import javax.transaction.UserTransaction;
 import java.security.Identity;
 import java.security.Principal;
+import java.util.Map;
 import java.util.Properties;
+
+import javax.transaction.UserTransaction;
 
 /**
  * <P>The EJBContext interface provides an instance with access to the
@@ -83,7 +85,14 @@ public interface EJBContext
     */
    public Principal getCallerPrincipal();
 
-
+   /**
+    * Returns the context data associated with this invocation or lifecycle callback. If there
+    * is no context data, an empty Map object will be returned. 
+    * @return Context data or empty map.
+    * @since 3.1
+    */
+   Map<String, Object> getContextData();
+   
    /**
     * <B>Deprecated.</B> <I>Use boolean isCallerInRole(String roleName) instead.</I>
     *
