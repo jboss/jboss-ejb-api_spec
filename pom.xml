@@ -37,7 +37,7 @@
     <dependency>
       <groupId>org.jboss.ws.native</groupId>
       <artifactId>jbossws-native-jaxrpc</artifactId>
-      <version>3.0.4.GA</version>
+      <version>3.2.2.GA</version>
     </dependency>
   </dependencies>
 </project>
