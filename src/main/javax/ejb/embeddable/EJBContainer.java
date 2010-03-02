@@ -167,8 +167,5 @@ public abstract class EJBContainer
     * 
     * @return The naming context.
     */
-   public Context getContext()
-   {
-      throw new UnsupportedOperationException(this + " does not support a naming context");
-   }
+   public abstract Context getContext();
 }
