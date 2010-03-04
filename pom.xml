@@ -15,6 +15,12 @@
   <name>EJB 3.0 API</name>
   <description>The Java EJB 3.0 API classes</description>
   
+  <scm>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/jbossas/projects/specs/trunk/jboss-ejb-api_3.0_spec</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/jbossas/projects/specs/trunk/jboss-ejb-api_3.0_spec</developerConnection>
+    <url>http://fisheye.jboss.org/browse/JBossAS/projects/specs/trunk/jboss-ejb-api_3.0_spec</url>
+  </scm>
+  
   <dependencies>
     <dependency>
       <groupId>org.jboss.spec.javax.transaction</groupId>
