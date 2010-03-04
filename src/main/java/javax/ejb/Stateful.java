@@ -34,7 +34,7 @@ import java.lang.annotation.Target;
  * javax.ejb.SessionBean interface.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 42322 $
+ * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
    public @interface Stateful

@@ -32,7 +32,7 @@ import java.util.Properties;
  * <P>This interface is extended by the SessionContext and EntityContext
  * interface to provide additional methods specific to the enterprise
  * Bean type.</P>
- * @version $Revision: 78512 $
+ * @version $Revision$
  */
 public interface EJBContext
 {

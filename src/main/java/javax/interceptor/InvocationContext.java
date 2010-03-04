@@ -28,7 +28,7 @@ import java.lang.reflect.Method;
  * AroundInvoke interceptor methods.
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision: 57282 $
+ * @version $Revision$
  */
 public interface InvocationContext
 {

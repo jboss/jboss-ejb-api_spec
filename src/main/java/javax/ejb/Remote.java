@@ -30,7 +30,7 @@ import java.lang.annotation.Target;
  * Bean class annotation that specifies remote interfaces of the Session bean.
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

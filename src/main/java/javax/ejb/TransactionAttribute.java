@@ -31,7 +31,7 @@ import java.lang.annotation.Target;
  * demarcation type of a session bean or message-driven bean.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target({ElementType.METHOD, ElementType.TYPE})
    @Retention(RetentionPolicy.RUNTIME)

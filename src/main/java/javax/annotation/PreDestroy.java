@@ -32,7 +32,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * annotation has completed.
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision: 57283 $
+ * @version $Revision$
  */
 @Documented
 @Target({METHOD})

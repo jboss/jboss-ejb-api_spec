@@ -30,7 +30,7 @@ import java.lang.annotation.Target;
  * The EJB annotation denotes a reference to an EJB 3.0 session bean.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 62538 $
+ * @version $Revision$
  */
 @Retention(RUNTIME)
 @Target({TYPE, METHOD, FIELD}) 

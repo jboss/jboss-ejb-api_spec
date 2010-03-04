@@ -31,7 +31,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * public Object <METHOD>(InvocationContext) throws Exception
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision: 44679 $
+ * @version $Revision$
  */
 @Target({METHOD}) @Retention(RUNTIME)
 public @interface AroundInvoke {

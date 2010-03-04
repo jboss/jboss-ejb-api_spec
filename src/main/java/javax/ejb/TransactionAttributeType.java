@@ -25,7 +25,7 @@ package javax.ejb;
  * Enum for the types of TransactionAttributes
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 public enum TransactionAttributeType
 {

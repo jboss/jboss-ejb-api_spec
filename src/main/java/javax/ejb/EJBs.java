@@ -32,7 +32,7 @@ import java.lang.annotation.Target;
  * references on a bean class.
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 45433 $
+ * @version $Revision$
  */
 @Target({ElementType.TYPE}) @Retention(RetentionPolicy.RUNTIME)
 public @interface EJBs

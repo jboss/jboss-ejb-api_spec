@@ -29,7 +29,7 @@ import javax.xml.rpc.handler.MessageContext;
  * instance. The container passes the SessionContext interface to an
  * instance after the instance has been created. The session context
  * remains associated with the instance for the lifetime of the instance.
- * @version $Revision: 61191 $
+ * @version $Revision$
  */
 public interface SessionContext extends EJBContext
 {

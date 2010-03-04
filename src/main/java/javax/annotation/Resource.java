@@ -35,7 +35,7 @@ import java.lang.annotation.Target;
  * shareable member refers to the sharability of resource manager connections.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 57283 $
+ * @version $Revision$
  */
 @Target({TYPE, FIELD, METHOD})
 @Retention(RetentionPolicy.RUNTIME)

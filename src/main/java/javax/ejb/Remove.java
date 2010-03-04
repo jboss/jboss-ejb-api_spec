@@ -30,7 +30,7 @@ import java.lang.annotation.Target;
  * Annotation to mark a method that will remove a stateful session on completion
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target({ElementType.METHOD}) @Retention(RetentionPolicy.RUNTIME)
 public @interface Remove

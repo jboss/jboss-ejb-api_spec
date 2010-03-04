@@ -24,7 +24,7 @@ package javax.ejb;
 /**
  * An AccessLocalException is thrown to indicate that the caller does not
  * have permission to call the method. This exception is thrown to local clients.
- * @version $Revision: 62510 $
+ * @version $Revision$
  */
 public class EJBAccessException extends EJBException {
 

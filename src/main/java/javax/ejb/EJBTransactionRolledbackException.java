@@ -27,7 +27,7 @@ package javax.ejb;
  * requested operation either could not be performed or was not performed
  * because further computation on behalf of the transaction would be fruitless.
  * 
- * @version $Revision: 62510 $
+ * @version $Revision$
  */
 public class EJBTransactionRolledbackException extends EJBException {
 

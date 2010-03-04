@@ -24,7 +24,7 @@ package javax.ejb;
 /**
  * A NoSuchEJBException is thrown if an attempt is made to invoke
  * a method on an object that no longer exists.
- * @version $Revision: 57789 $
+ * @version $Revision$
  */
 public class NoSuchEJBException extends EJBException {
    private static final long serialVersionUID = -4861625171310593950L;

@@ -31,7 +31,7 @@ import java.lang.annotation.Target;
  * a transaction rollback
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)

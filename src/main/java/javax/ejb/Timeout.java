@@ -31,7 +31,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  *    public void <METHOD>(Timer timer)
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target({METHOD}) @Retention(RUNTIME)
 public @interface Timeout

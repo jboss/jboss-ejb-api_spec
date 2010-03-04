@@ -34,7 +34,7 @@ import java.lang.annotation.Target;
  * demarcation.
  * 
  * @author <a href="mailto:bdecoste@jboss.com">William DeCoste</a>
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
    public @interface TransactionManagement

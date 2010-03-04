@@ -41,7 +41,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * include in the generated code.
  *
  * @author <a href="mailto:carlo.dewolf@jboss.com">Carlo de Wolf</a>
- * @version $Revision: $
+ * @version $Revision$
  * @since Common Annotations 1.0
  */
 @Documented

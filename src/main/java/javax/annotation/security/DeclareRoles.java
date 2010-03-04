@@ -35,7 +35,7 @@ import java.lang.annotation.Target;
  * isCallerInRole(String roleName) method.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 57283 $
+ * @version $Revision$
  */
 @Documented
 @Target({ElementType.TYPE})

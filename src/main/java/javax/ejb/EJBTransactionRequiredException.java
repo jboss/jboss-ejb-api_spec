@@ -25,7 +25,7 @@ package javax.ejb;
  * This exception indicates that a request carried a null transaction context,
  * but the target object requires an activate transaction.
  * 
- * @version $Revision: 37459 $
+ * @version $Revision$
  */
 public class EJBTransactionRequiredException extends EJBException {
 

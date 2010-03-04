@@ -33,7 +33,7 @@ import java.lang.annotation.Target;
  * method(s).
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 57283 $
+ * @version $Revision$
  */
 @Documented
 @Target({ElementType.TYPE, ElementType.METHOD})

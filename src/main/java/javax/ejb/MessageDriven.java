@@ -31,7 +31,7 @@ import java.lang.annotation.Target;
  * message-driven bean. This annotation is applied to the bean class.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 42322 $
+ * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
    public @interface MessageDriven

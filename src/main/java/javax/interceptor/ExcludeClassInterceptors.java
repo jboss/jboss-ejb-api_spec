@@ -15,7 +15,7 @@ import java.lang.annotation.Target;
 /**
  * 
  * @author <a href="kabir.khan@jboss.com">Kabir Khan</a>
- * @version $Revision: 44679 $
+ * @version $Revision$
  */
 @Target({METHOD}) @Retention(RUNTIME)
 public @interface ExcludeClassInterceptors {

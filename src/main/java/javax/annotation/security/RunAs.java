@@ -39,7 +39,7 @@ import java.lang.annotation.Target;
  * the security role the bean runs as.
  * 
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 57283 $
+ * @version $Revision$
  */
 @Documented
 @Target(ElementType.TYPE)

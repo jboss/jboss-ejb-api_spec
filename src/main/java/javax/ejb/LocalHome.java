@@ -30,7 +30,7 @@ import java.lang.annotation.Target;
  * Annotation for specifying the local home interface for a bean
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
- * @version $Revision: 39861 $
+ * @version $Revision$
  */
 @Target(ElementType.TYPE) @Retention(RetentionPolicy.RUNTIME)
 public @interface LocalHome

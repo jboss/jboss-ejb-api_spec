@@ -32,7 +32,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  * classes, the Interceptors annotation is used.
  * 
  * @author <a href="mailto:kabir.khan@jboss.org">Kabir Khan</a>
- * @version $Revision: 44679 $
+ * @version $Revision$
  */
 @Target({TYPE, METHOD}) @Retention(RUNTIME)
    public @interface Interceptors
