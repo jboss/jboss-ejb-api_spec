@@ -1,8 +1,0 @@
-<classpath>
-  <classpathentry kind="src" path="src/etc" including="**/*" excluding="**/*.java"/>
-  <classpathentry kind="src" path="src/main"/>
-  <classpathentry kind="output" path="target/eclipse-classes"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry kind="var" path="M2_REPO/jboss/jboss-transaction-api/1.0.1-SNAPSHOT/jboss-transaction-api-1.0.1-SNAPSHOT.jar" sourcepath="M2_REPO/jboss/jboss-transaction-api/1.0.1-SNAPSHOT/jboss-transaction-api-1.0.1-SNAPSHOT-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/jboss/jbossws/jboss-jaxrpc/1.0.4.GA/jboss-jaxrpc-1.0.4.GA.jar"/>
-</classpath>
