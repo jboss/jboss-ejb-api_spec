@@ -15,18 +15,6 @@
   <name>EJB 3.0 API</name>
   <description>The Java EJB 3.0 API classes</description>
   
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
   <dependencies>
     <dependency>
       <groupId>org.jboss.spec.javax.transaction</groupId>
