@@ -22,19 +22,15 @@
 package javax.ejb;
 
 /**
- * A Singleton bean's concurrency management type.
- * <ul>
- * <li>BEAN : Bean managed concurrency</li>
- * <li>CONCURRENCY_NOT_ALLOWED : Concurrency not allowed</li>
- * <li>CONTAINER : Container managed concurrency</li> 
- * </ul>
+ * Concurrency management type for a singleton or stateful session bean. 
+ * Bean-managed concurrency only applies to singletons. 
  *  
  * @author <a href="mailto:cdewolf@redhat.com">Carlo de Wolf</a>
  * @version $Revision$
  * @since 3.1
  */
 public enum ConcurrencyManagementType {
-   BEAN,
-   CONCURRENCY_NOT_ALLOWED,
+   BEAN, 
    CONTAINER
+
 }
