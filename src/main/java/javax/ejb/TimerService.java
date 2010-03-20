@@ -32,6 +32,7 @@ import java.util.Date;
  * a specified time, after a specified elapsed time, or after a specified interval.
  **/
 public interface TimerService {
+   
    /**
     * Create a calendar-based timer based on the input schedule expression.
     * 
@@ -47,23 +48,6 @@ public interface TimerService {
    Timer createCalendarTimer(ScheduleExpression schedule)
       throws IllegalArgumentException, IllegalStateException, EJBException;
    
-   /**
-    * Create a calendar-based timer based on the input schedule expression.
-    * 
-    * @param schedule A schedule expression describing the timeouts for this timer.
-    * @param info Application information to be delivered along with the timer 
-    *   expiration. This can be null.
-    * @return The newly created Timer.
-    * @throws IllegalArgumentException If Schedule represents an invalid schedule
-    *   expression.
-    * @throws IllegalStateException If this method is invoked while the instance
-    *   is in a state that does not allow access to this method. 
-    * @throws EJBException If this method could not complete due to a system-level failure.
-    * @since 3.1
-    */
-   Timer createCalendarTimer(ScheduleExpression schedule, Serializable info)
-      throws IllegalArgumentException, IllegalStateException, EJBException;
-
    /**
     * Create a calendar-based timer based on the input schedule expression.
     * 
@@ -282,7 +266,7 @@ public interface TimerService {
     *                               a state that does not allow access to this method.
     * @throws EJBException If this method could not complete due to a system-level failure.
     **/
-   public Collection getTimers()
+   public Collection<Timer> getTimers()
       throws
          IllegalStateException,
          EJBException;
