@@ -154,6 +154,14 @@ public class ScheduleExpression implements Serializable
    
    public String getTimezone()
    {
+      // As per EJB3.1 spec:
+      // [97] Note that annotation java.lang.String attributes use the empty string "" as a default, 
+      // so the expression @Schedule(timezone="", ...) will result in a null value from the 
+      // corresponding ScheduleExpression.getTimezone() method.
+      if (timezone != null && timezone.isEmpty())
+      {
+         return null;
+      }
       return timezone;
    }
    
