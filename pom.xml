@@ -41,9 +41,9 @@
       <version>1.0.0.Beta1</version>
     </dependency>
     <dependency>
-      <groupId>org.jboss.ws.native</groupId>
-      <artifactId>jbossws-native-jaxrpc</artifactId>
-      <version>3.2.2.GA</version>
+      <groupId>javax.xml</groupId>
+      <artifactId>jaxrpc-api</artifactId>
+      <version>1.1</version>
     </dependency>
   </dependencies>
 </project>
