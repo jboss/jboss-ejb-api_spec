@@ -41,7 +41,9 @@ import java.io.Serializable;
 public class TimerConfig
 {
    private Serializable info;
-   private boolean persistent;
+
+   // Persistent by default 
+   private boolean persistent = true;
 
    public TimerConfig()
    {
