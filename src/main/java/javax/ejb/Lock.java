@@ -36,7 +36,7 @@ import java.lang.annotation.Target;
  * @version $Revision$
  * @since 3.1
  */
-@Target({TYPE,METHOD})
+@Target({METHOD,TYPE})
 @Retention(RUNTIME)
 public @interface Lock {
    LockType value() default WRITE;
