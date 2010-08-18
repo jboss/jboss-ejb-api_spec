@@ -241,4 +241,35 @@ public class ScheduleExpression implements Serializable
       this.year = y;
       return this;
    }
+   
+   @Override
+   public String toString()
+   {
+      StringBuilder sb = new StringBuilder("ScheduleExpression[");
+      
+      sb.append("second=");
+      sb.append(this.second);
+      sb.append(" minute=");
+      sb.append(this.minute);
+      sb.append(" hour=");
+      sb.append(this.hour);
+      sb.append(" dayOfWeek=");
+      sb.append(this.dayOfWeek);
+      sb.append(" dayOfMonth=");
+      sb.append(this.dayOfMonth);
+      sb.append(" month=");
+      sb.append(this.month);
+      sb.append(" year=");
+      sb.append(this.year);
+      sb.append(" start=");
+      sb.append(this.start);
+      sb.append(" end=");
+      sb.append(this.end);
+      sb.append(" timezone=");
+      sb.append(this.timezone);
+      
+      sb.append("]");
+
+      return sb.toString();
+   }
 }
