@@ -24,13 +24,19 @@ package javax.ejb;
  * to report a failure to create an entity EJB object. </P>
  */
 public class CreateException extends Exception {
-
+   
   /**
+    * 
+    */
+   private static final long serialVersionUID = 6295951740865457514L;
+
+   /**
    * Constructs an CreateException with no detail message. 
    */
-  public CreateException() {
-    super();
-  }
+   public CreateException()
+   {
+      super();
+   }
 
   /**
    * Constructs an CreateException with the specified detail message.
