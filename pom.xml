@@ -39,13 +39,11 @@
       <groupId>org.jboss.spec.javax.transaction</groupId>
       <artifactId>jboss-transaction-api_1.1_spec</artifactId>
       <version>1.0.0.Final</version>
-      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.jboss.spec.javax.xml.rpc</groupId>
       <artifactId>jboss-jaxrpc-api_1.1_spec</artifactId>
       <version>1.0.0.Final</version>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
