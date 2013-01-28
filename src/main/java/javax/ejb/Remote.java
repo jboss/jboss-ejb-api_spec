@@ -6,7 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Bean class annotation that specifies remote interfaces of the Session bean.
+ * Bean class annotation that specifies remote view interfaces of the Session
+ * bean.
  *
  * @author <a href="mailto:bill@jboss.org">Bill Burke</a>
  * @version $Revision$
