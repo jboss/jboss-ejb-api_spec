@@ -248,8 +248,20 @@ public interface TimerService {
     *                               a state that does not allow access to this method.
     * @throws EJBException If this method could not complete due to a system-level failure.
     **/
-   public Collection<Timer> getTimers()
-      throws
-         IllegalStateException,
-         EJBException;
+   public Collection<Timer> getTimers() throws IllegalStateException, EJBException;
+   
+   /**
+    * Returns all active timers associated with the beans in the same module in which the caller 
+    * bean is packaged. These include both the programmatically-created timers and 
+    * the automatically-created timers. 
+    * 
+    * @return A collection of javax.ejb.Timer objects.
+    * @throws IllegalStateException If this method is invoked while the instance is in
+    *                               a state that does not allow access to this method.
+    * @throws EJBException If this method could not complete due to a system-level failure.
+    * 
+    * @since EJB 3.2
+    **/
+   public Collection<Timer> getAllTimers() throws IllegalStateException, EJBException;
+   
 }
