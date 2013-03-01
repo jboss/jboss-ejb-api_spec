@@ -10,12 +10,12 @@
   </parent>
   
   <groupId>org.jboss.spec.javax.ejb</groupId>
-  <artifactId>jboss-ejb-api_3.1_spec</artifactId>
-  <version>1.0.3.Final-SNAPSHOT</version>
+  <artifactId>jboss-ejb-api_3.2_spec</artifactId>
+  <version>1.0.0.Alpha1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Enterprise JavaBeans(TM) 3.1 API</name>
-  <description>JSR 318: Enterprise JavaBeans(TM) 3.1 API</description>
+  <name>Enterprise JavaBeans(TM) 3.2 API</name>
+  <description>JSR 345: Enterprise JavaBeans(TM) 3.2 API</description>
   
   <licenses>
     <license>
@@ -85,12 +85,12 @@
             </manifest>
           </archive>
           <instructions>
-            <Specification-Title>Enterprise JavaBeans(TM) 3.1 API</Specification-Title>
+            <Specification-Title>Enterprise JavaBeans(TM) 3.2 API</Specification-Title>
             <Specification-Vendor>Oracle</Specification-Vendor>
-            <Specification-Version>3.1</Specification-Version>
+            <Specification-Version>3.2</Specification-Version>
             <!-- Set the package version to match the spec version -->
             <Export-Package>
-              javax.ejb*;version=3.1
+              javax.ejb*;version=3.2
             </Export-Package>
           </instructions>
         </configuration>
@@ -112,9 +112,9 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Specification-Title>Enterprise JavaBeans(TM) 3.1 API</Specification-Title>
+              <Specification-Title>Enterprise JavaBeans(TM) 3.2 API</Specification-Title>
               <Specification-Vendor>Oracle</Specification-Vendor>
-              <Specification-Version>3.1</Specification-Version>
+              <Specification-Version>3.2</Specification-Version>
             </manifestEntries>
           </archive>
         </configuration>
