@@ -16,7 +16,7 @@
 
   <name>Enterprise JavaBeans(TM) 3.2 API</name>
   <description>JSR 345: Enterprise JavaBeans(TM) 3.2 API</description>
-  
+
   <licenses>
     <license>
       <name>Common Development and Distribution License</name>
@@ -35,7 +35,14 @@
     <developerConnection>scm:git:git@github.com:jboss/jboss-ejb-api_spec.git</developerConnection>
     <url>https://github.com/jboss/jboss-ejb-api_spec</url>
   </scm>
-  
+
+    <properties>
+        <!-- This property is used by the maven enforcer and maven compiler plugins configured in the parent pom
+            (jboss-parent). We override the value here to 1.7 to force our project to require Java 7 -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+
   <build>
     <plugins>
       <!-- Include LICENSE.txt in the META-INF directory -->
