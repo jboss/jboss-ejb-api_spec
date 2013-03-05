@@ -25,7 +25,7 @@ import javax.naming.Context;
  * @version $Revision$
  * @since 3.1
  */
-public abstract class EJBContainer
+public abstract class EJBContainer implements AutoCloseable
 {
    public static final String APP_NAME = "javax.ejb.embeddable.appName";
    public static final String MODULES = "javax.ejb.embeddable.modules";
@@ -43,6 +43,7 @@ public abstract class EJBContainer
    /**
     * Shutdown an embeddable EJBContainer instance.
     */
+   @Override
    public abstract void close();
    
    /**
