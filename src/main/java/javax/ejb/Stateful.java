@@ -21,5 +21,12 @@ import java.lang.annotation.Target;
    String name() default "";
    String mappedName() default "";
    String description() default "";
+
+   /**
+    * Specifies whether this stateful session bean is passivation capable
+    *
+    * @since EJB 3.2
+    */
+   boolean passivationCapable() default true;
 }
 
