@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>10</version>
+    <version>25</version>
   </parent>
   
   <groupId>org.jboss.spec.javax.ejb</groupId>
@@ -91,6 +91,9 @@
             <manifest>
               <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
             </manifest>
+            <manifestEntries>
+              <Automatic-Module-Name>beta.jboss.ejb.api_3_2</Automatic-Module-Name>
+            </manifestEntries>
           </archive>
           <instructions>
             <Specification-Title>Enterprise JavaBeans(TM) 3.2 API</Specification-Title>
@@ -134,7 +137,7 @@
     <dependency>
       <groupId>org.jboss.spec.javax.transaction</groupId>
       <artifactId>jboss-transaction-api_1.2_spec</artifactId>
-      <version>1.0.0.Final</version>
+      <version>1.1.1.Final</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -142,6 +145,7 @@
       <artifactId>jboss-jaxrpc-api_1.1_spec</artifactId>
       <version>1.0.1.Final</version>
       <scope>provided</scope>
+      <optional>true</optional>
     </dependency>
   </dependencies>
 </project>
